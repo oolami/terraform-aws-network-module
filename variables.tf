@@ -21,3 +21,12 @@ variable "private_subnet_cidrs" {
 variable "availability_zones" {
   default = ["us-east-1a", "us-east-1b"]
 }
+
+variable "instance_type" {
+  default = "t2.medium"
+}
+
+variable "key_name" {
+  description = "Existing AWS EC2 key pair name"
+  type        = string
+}
