@@ -8,7 +8,7 @@ module "network" {
   availability_zones   = var.availability_zones
 }
 
-  module "ec2" {
+module "ec2" {
   source = "./modules/ec2"
 
   project_name        = var.project_name
